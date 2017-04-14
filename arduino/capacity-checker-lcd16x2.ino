@@ -1,6 +1,3 @@
-/*
-   Based on adamwelch.co.uk/2016/01/lithium-ion-18650-battery-capacity-checker/
-*/
 /* 
 * Battery Capacity Checker from Adam Welch
 * Little Addons by bobybobybob
@@ -10,7 +7,7 @@
 * 
 * Adam Welch Battery Capacity Checkeroriginal YouTube Video: https://www.youtube.com/embed/qtws6VSIoYk
 * 
-* http://AdamWelch.Uk 
+* http://AdamWelch.Uk
 * 
 */
  
@@ -104,7 +101,7 @@ if (finished == true) {
        
       delay(interval);
   }
-  if(battVolt < battLow){
+  if(battVolt <= battLow && finished == false){
       digitalWrite(gatePin, LOW);
       finished = true;
       lcd.clear();
