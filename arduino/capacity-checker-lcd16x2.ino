@@ -117,5 +117,5 @@ if (finished == true) {
       lcd.print("Kap: ");
       lcd.print(mAh);    
       lcd.print("mAh");       
-      //delay(interval * 2);
+      delay(interval * 2);
   }}  
